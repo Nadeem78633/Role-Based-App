@@ -1,7 +1,7 @@
-// Login.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
+import "../Assets/Css/login.css"; // Import the CSS file
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -14,7 +14,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>

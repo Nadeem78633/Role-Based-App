@@ -1,0 +1,108 @@
+/* Container for the form */
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Full height to center vertically */
+}
+
+/* Form header */
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form input fields */
+.register-container form {
+  width: 100%;
+  max-width: 300px; /* Limit the width of the form */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-container label {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.register-container button[type="submit"] {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* Ensure button is full width of its container */
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.register-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 15px;
+  }
+
+  .register-container h2 {
+    font-size: 22px;
+  }
+
+  .register-container input[type="text"],
+  .register-container input[type="password"],
+  .register-container select {
+    font-size: 14px;
+  }
+
+  .register-container button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-container h2 {
+    font-size: 20px;
+  }
+
+  .register-container input[type="text"],
+  .register-container input[type="password"],
+  .register-container select {
+    font-size: 12px;
+  }
+
+  .register-container button[type="submit"] {
+    font-size: 12px;
+  }
+}
